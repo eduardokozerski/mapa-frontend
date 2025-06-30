@@ -1,0 +1,374 @@
+/* =========== RESET CSS E CONFIGURAÇÕES GERAIS =========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* =========== HEADER E CONTAINER PRINCIPAL =========== */
+
+/* Estilização de cabeçalho */
+.header {
+  background-color: rgb(0, 119, 255);
+  padding: 1.4rem;
+}
+
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo centralizada no header */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* Botão de menu */
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Container do menu de navegação */
+.nav {
+  position: relative;
+}
+
+/* Lista de navegação (oculta por padrão) */
+.nav-list {
+  display: none;
+  list-style: none;
+  gap: 1rem;
+  padding: 0 33px 15px 33px;
+}
+
+/* Estilo dos links do menu */
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Exibe o menu quando ativo (menu-toggle clicado) */
+.nav-list.ativo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgb(0, 119, 255);
+  z-index: 1000;
+}
+
+/* =========== HERO SECTION =========== */
+
+/* Container da seção hero */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+/* Imagem da hero */
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Texto da hero */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* =========== CARDS DE CONTINENTES =========== */
+
+.main-cards {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Grid de cards dos continents */
+.continent-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+/* Estilo individual dos cards */
+.card {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h2 {
+  padding: 1rem;
+  color: #000000;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* =========== SEÇÃO DE CONTATO ============ */
+.contato {
+  background-color: rgb(0, 119, 255);
+  padding: 3rem 1rem;
+}
+
+.contato h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 2.3rem;
+}
+
+/* Formulário centralizado e responsivo */
+#form-contato {
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 0.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#form-contato label {
+  font-weight: 500;
+  color: white;
+}
+
+#form-contato input,
+#form-contato textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+#form-contato button {
+  width: 100%;
+  background-color: rgb(0, 82, 177);
+  color: white;
+  padding: 0.8rem;
+  margin-top: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#form-contato button:hover {
+  background-color: rgb(0, 63, 135);
+}
+
+/* =========== PÁGINA DOS CONTINENTES =========== */
+.continent-page {
+  padding: 2rem 1rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.continent-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #0077ff;
+  margin-bottom: 2rem;
+}
+
+.destination-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.destination-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.destination-card p {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.destination-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+/* =========== FOOTER =========== */
+
+.footer {
+  background-color: rgb(0, 63, 135);
+  color: white;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  display: flex;
+}
+
+/* =========== BOTÃO VOLTAR AO TOPO =========== */
+#btn-topo {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 119, 255, 0.5);
+  color: white;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+#btn-topo:hover {
+  background: rgb(0, 82, 177);
+}
+
+/* =========== RESPONSIVIDADE COM FOCO EM SMARTPHONE =========== */
+
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-text {
+    position: static;
+    transform: none;
+    color: #000;
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-top: -5px;
+    border-radius: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .nav-list {
+    padding: 15px 33px 15px 33px;
+  }
+
+  .menu-toggle span {
+    display: none;
+  }
+
+  .footer {
+    font-size: 0.7rem;
+  }
+}
+
+/* =========== OUTRAS MEDIA QUERIES =========== */
+
+@media (min-width: 769px) {
+  .hero-text {
+    text-align: left;
+    left: 5%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .continent-cards {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .continent-cards {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  #form-contato {
+    max-width: 380px;
+  }
+}

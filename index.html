@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Site de destinos turísticos" />
+    <title>MeuDestino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">MeuDestino</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+          &#9776; <span>MENU</span>
+        </button>
+      </div>
+    </header>
+    <!-- Menu de navegação -->
+    <nav class="nav">
+      <ul class="nav-list" id="nav-list">
+        <li class="nav-item"><a href="index.html">Início</a></li>
+        <li class="nav-item"><a href="mundo.html">Mundo</a></li>
+        <li class="nav-item"><a href="americas.html">Américas</a></li>
+        <li class="nav-item"><a href="europa.html">Europa</a></li>
+        <li class="nav-item"><a href="asia.html">Ásia</a></li>
+        <li class="nav-item"><a href="africa.html">África</a></li>
+        <li class="nav-item"><a href="oceania.html">Oceania</a></li>
+      </ul>
+    </nav>
+    <!-- Seção hero -->
+    <main>
+      <section class="hero">
+        <div class="hero-image">
+          <img src="/imagens/hero-banner.jpg" alt="Imagem da seção hero" />
+        </div>
+        <div class="hero-text">
+          <h1>Descubra o Mundo</h1>
+          <p>
+            Sem sair do lugar, conheça os destinos mais fascinantes da Terra
+          </p>
+        </div>
+      </section>
+      <!-- Cards de continentes -->
+      <section class="continent-cards">
+        <a href="mundo.html" class="card">
+          <img
+            src="imagens/paolo-chiabrando-0SpzMi1rrzA-unsplash.jpg"
+            alt="Imagem de um globo terrestre giratório"
+          />
+          <h2>Mundo</h2>
+        </a>
+        <a href="americas.html" class="card">
+          <img
+            src="imagens/agustin-diaz-gargiulo-7F65HDP0-E0-unsplash.webp"
+            alt="Rio de Janeiro, Brasil"
+          />
+          <h2>Américas</h2>
+        </a>
+        <a href="europa.html" class="card">
+          <img
+            src="imagens/arco-triunfo-a-noite-com-farois-de-carros-paris-franca.jpg"
+            alt="Arco do triunfo em Paris, França"
+          />
+          <h2>Europa</h2>
+        </a>
+        <a href="asia.html" class="card">
+          <img
+            src="imagens/jezael-melgoza-ryqRm-dfZbI-unsplash.jpg"
+            alt="Japão"
+          />
+          <h2>Ásia</h2>
+        </a>
+        <a href="africa.html" class="card">
+          <img src="imagens/za-tourist-UhTAHetU_gM-unsplash.jpg" alt="África" />
+          <h2>África</h2>
+        </a>
+        <a href="oceania.html" class="card">
+          <img src="imagens/loren-gu-AKw01Fig67U-unsplash.jpg" alt="Oceania" />
+          <h2>Oceania</h2>
+        </a>
+      </section>
+      <!-- Seção de contato -->
+      <section class="contato" id="contato">
+        <div class="contact-container">
+          <h2>Fale conosco</h2>
+          <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2025 MeuDestino - Desenvolvido por Eduardo Kozerski para fins
+          acadêmicos.
+        </p>
+      </div>
+    </footer>
+    <!-- Botão de voltar ao topo -->
+    <button id="btn-topo" aria-label="Voltar ao topo">↑</button>
+    <!-- Integração do JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
